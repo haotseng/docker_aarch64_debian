@@ -1,4 +1,4 @@
 FROM scratch
-ADD rootfs.tar.gz /
+ADD ./output/rootfs.tar.gz /
 
 CMD ["/bin/bash"]

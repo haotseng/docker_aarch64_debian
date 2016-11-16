@@ -149,8 +149,12 @@ sleep 2
 umount ${rootfs}/dev/
 sleep 2
 
-rm -rf ${rootfs}/usr/bin/qemu-aarch64-static
-sleep 2
+#
+# If you want to let x86 system execute armhf docker container, you should keep qemu-aarch64-static in the docker image
+#
+
+#rm -rf ${rootfs}/usr/bin/qemu-aarch64-static
+#sleep 2
 
 # Generate rootfs tar-ball
 sync
